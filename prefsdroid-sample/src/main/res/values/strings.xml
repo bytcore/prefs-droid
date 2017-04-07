@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PrefDroidExample</string>
+    <string name="save_text">save</string>
+    <string name="save_obj">Save User</string>
+    <string name="failed_saved">Failed to save</string>
+</resources>
