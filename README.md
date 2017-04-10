@@ -45,9 +45,9 @@ User savedUser = Preference.getObject(OBJECT, User.class);
 ```
 You can remove a single key
 ```Java
-    if (Preference.containsKey(KEY)) {
-        Preference.remove(KEY);
-    }
+if (Preference.containsKey(KEY)) {
+    Preference.remove(KEY);
+}
 ```
 or remove all keys by calling
 ```Java
