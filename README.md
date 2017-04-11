@@ -4,15 +4,7 @@ An easy to use tools for Shared Preference of android
 Add dependency in your module **build.gradle** file
 ```Java
 dependencies {
-    compile 'com.binjar.prefsdroid:prefs-droid:1.0@aar'
-}
-```
-Make sure to add the Maven Central Repository to **build.gradle** before **dependencies**
-```java
-repositories {
-    maven {
-        url  "http://dl.bintray.com/arifnislam/maven" 
-    }
+    compile 'com.binjar.prefsdroid:prefs-droid:1.0'
 }
 ```
 Initialize preference in the `Application` class
