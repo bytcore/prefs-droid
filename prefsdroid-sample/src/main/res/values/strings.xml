@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">PrefDroidExample</string>
-    <string name="save_text">save</string>
-    <string name="save_obj">Save User</string>
+    <string name="btn_save">save</string>
+    <string name="saved">Changes Saved</string>
     <string name="failed_saved">Failed to save</string>
+    <string name="notify_me">Notify Me</string>
+    <string name="hint_email">Email</string>
+    <string name="label_info">Info</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_address">Address</string>
 </resources>

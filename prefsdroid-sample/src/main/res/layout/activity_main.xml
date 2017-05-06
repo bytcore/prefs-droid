@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -24,74 +22,37 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/et_text"
+                android:id="@+id/et_email"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Text"
-                android:inputType="text"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
                 />
 
-            <Button
-                android:id="@+id/btn_save_text"
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_save_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/save_text"/>
+                android:text="@string/btn_save"/>
         </LinearLayout>
-
-        <LinearLayout
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_notify_me"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/et_number"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Number"
-                android:inputType="number"
-                />
-
-            <Button
-                android:id="@+id/btn_save_number"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/save_text"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/et_bool"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Boolean"
-                android:inputType="text"
-                />
-
-            <Button
-                android:id="@+id/btn_save_bool"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/save_text"/>
-        </LinearLayout>
+            android:text="@string/notify_me"/>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:background="@color/colorAccent"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="User"
+            android:text="@string/label_info"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textStyle="bold"/>
 
@@ -99,26 +60,26 @@
             android:id="@+id/et_user_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"/>
+            android:hint="@string/hint_name"/>
 
         <EditText
             android:id="@+id/et_user_age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Age"
+            android:hint="@string/hint_age"
             android:inputType="number"/>
 
         <EditText
             android:id="@+id/et_user_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Address"/>
+            android:hint="@string/hint_address"/>
 
-        <Button
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/btn_save_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:text="@string/save_obj"/>
+            android:text="@string/btn_save"/>
     </LinearLayout>
 </ScrollView>

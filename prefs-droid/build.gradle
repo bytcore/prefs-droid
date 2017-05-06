@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/binjar/prefs-droid'
     gitUrl = 'https://github.com/binjar/prefs-droid.git'
 
-    libraryVersion = '1.0'
+    libraryVersion = '1.1.0'
 
     developerId = 'arifnislam'
     developerName = 'Arif Islam'
@@ -50,7 +50,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.1'
+
     testCompile 'junit:junit:4.12'
     compile 'com.google.code.gson:gson:2.8.0'
 }
