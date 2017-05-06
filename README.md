@@ -1,10 +1,12 @@
 # prefs-droid
-An easy to use tools for Shared Preference of android
+An easy to use wrapper tools for Shared Preference of android
 ## Getting Started
+[ ![Download](https://api.bintray.com/packages/arifnislam/maven/prefs-droid/images/download.svg) ](https://bintray.com/arifnislam/maven/prefs-droid/_latestVersion) from JCenter
+<br /> or <br />
 Add dependency in your module **build.gradle** file
 ```Java
 dependencies {
-    compile 'com.binjar.prefsdroid:prefs-droid:1.0'
+    compile 'com.binjar.prefsdroid:prefs-droid:1.1.0'
 }
 ```
 Initialize preference in the `Application` class
@@ -45,5 +47,9 @@ or remove all keys by calling
 ```Java
 Preference.clear();
 ```
+
+### Bonus
+You can add `@Type()` source annotation to your preference keys which will help you to find easily what type of value is stored against that key. See smaple [PrefsKey.java](https://github.com/binjar/prefs-droid/blob/master/prefsdroid-sample/src/main/java/com/binjar/prefdroidexample/PrefsKey.java) for usage.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/binjar/prefs-droid/blob/master/LICENSE) file for details
